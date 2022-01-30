@@ -1,0 +1,338 @@
+# benchmarks
+Cada contianer rodou com duas CPUs, assim como a vm
+
+## IO
+comando ded teste de esrita :dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+comando de teste de leitura: dd if=/root/teste.bin of=/dev/null bs=1G count=1 oflag=direct
+dd if=/root/teste.bin of=/dev/null bs=1G count=1 oflag=direct
+### Máquina virtual
+sudo dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 6.64108 s, 162 MB/s
+# com valores aleatórios VM:
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 3.58819 s, 9.4 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 3.61168 s, 9.3 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.591326 s, 56.7 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.597756 s, 56.1 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.561448 s, 59.8 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.576965 s, 58.2 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.55481 s, 60.5 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.777562 s, 43.2 MB/s
+
+# Leitura com dd to null
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.101214 s, 332 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0645634 s, 520 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0727332 s, 461 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.070216 s, 478 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0718933 s, 467 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0605142 s, 554 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0700726 s, 479 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0711538 s, 472 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0708048 s, 474 MB/s
+vagrant@ubuntu-focal:~$ sudo dd if=/root/teste.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0702142 s, 478 MB/s
+
+
+### Docker
+# escrita docker zero pra zero
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 6.21949 s, 173 MB/s
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.816364 s, 1.3 GB/s
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.533108 s, 2.0 GB/s
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.551334 s, 1.9 GB/s
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 2.41068 s, 445 MB/s
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.482929 s, 2.2 GB/s
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.537626 s, 2.0 GB/s
+root@d2bb40e4e797:/# rm /laptop.bin 
+root@d2bb40e4e797:/# dd if=/dev/zero of=/laptop.bin bs=1G count=1 oflag=direct
+1+0 records in
+1+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.465646 s, 2.3 GB/s
+
+# com valores aleatórios container
+33554431 bytes (34 MB, 32 MiB) copied, 0.57869 s, 58.0 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.584883 s, 57.4 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.581334 s, 57.7 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.594738 s, 56.4 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.60345 s, 55.6 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.655531 s, 51.2 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+^[[A0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.732315 s, 45.8 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.911316 s, 36.8 MB/s
+root@acd7d65fa3bd:/# dd if=/dev/urandom of=/laptop.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.816311 s, 41.1 MB/s
+
+
+
+# Leitura container
+33554431 bytes (34 MB, 32 MiB) copied, 0.0914818 s, 367 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0876693 s, 383 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0795939 s, 422 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null 
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0887496 s, 378 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0884525 s, 379 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0900639 s, 373 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0887071 s, 378 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0884934 s, 379 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0886376 s, 379 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0895219 s, 375 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0835047 s, 402 MB/s
+root@fde72b0e5c23:/# dd if=/laptop.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0836904 s, 401 MB/s
+
+
+
+# Singularity
+
+## escrita de arqvuivo aleatório 
+33554431 bytes (34 MB, 32 MiB) copied, 3.64343 s, 9.2 MB/s
+Singularity>: not found
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 3.95272 s, 8.5 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.572263 s, 58.6 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.74661 s, 44.9 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.576654 s, 58.2 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.584082 s, 57.4 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.569735 s, 58.9 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.571739 s, 58.7 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.582116 s, 57.6 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.748384 s, 44.8 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.662467 s, 50.7 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.741786 s, 45.2 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.579057 s, 57.9 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.606576 s, 55.3 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.556034 s, 60.3 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.586764 s, 57.2 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.569472 s, 58.9 MB/s
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.837079 s, 40.1 MB/s
+Singularity> 
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 1.21411 s, 27.6 MB/s
+Singularity> 
+Singularity> dd if=/dev/urandom of=/root/teste.bin bs=1G count=1 oflag=direct
+0+1 records in
+0+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.656148 s, 51.1 MB/s
+
+# copia pra null
+33554431 bytes (34 MB, 32 MiB) copied, 0.0732184 s, 458 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0709361 s, 473 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0621761 s, 540 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0728803 s, 460 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0725845 s, 462 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0727514 s, 461 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0634305 s, 529 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0716955 s, 468 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.072018 s, 466 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0720734 s, 466 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0731812 s, 459 MB/s
+Singularity> dd if=/root/teste.bin of=/dev/null
+65535+1 records in
+65535+1 records out
+33554431 bytes (34 MB, 32 MiB) copied, 0.0632366 s, 531 MB/s

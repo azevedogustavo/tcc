@@ -1,0 +1,19 @@
+revisão bibliográficas e efeciencia de interfaces de container e outras ferramentas de orquestrar container
+
+definir tecnologias de cainterrização
+avaliar o desempenho da aplicação representativos
+
+bigdata machine e machine learn
+
+estudar as aplicações e ambientes de container e se eles rodam em orquestradores (kubernetes)
+
+1 aplicações que façam IO,1 deep learn uso de GPU, 1 big data, 1 aplicações de HPC, 1 que usa banco de dados tradicional
+
+bench mark de tudo, 
+
+singularity (ferramenta), RKT, docker, conteinr.d
+
+escrever sobre essas ferramentas.
+Focar nessas aplicações no docker
+
+pesquisa outros orquestradores.

@@ -1,0 +1,2 @@
+singularity test ubuntu_s2.simg
+sudo singularity build ubuntu_s2.simg docker://ubuntu:latest
