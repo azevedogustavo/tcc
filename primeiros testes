@@ -1,0 +1,8 @@
+primeiro teste:
+	(feito) criar uma rede de container e testar o iperf
+
+	teste de banco de dados
+
+	teste de I/O com o FIO
+		Lembrar da dependencia antes de compilar sudo apt-get install libaio1 libaio-dev
+
