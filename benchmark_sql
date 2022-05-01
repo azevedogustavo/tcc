@@ -1,0 +1,18 @@
+#resultados benchmark sql
+#VM
+vagrant@ubuntu-focal:~/Downloads/tcc/sql-benchmark/java$ java -jar target/sql-benchmark-1.0.jar -sqlite -repeat 1000
+<benchmark language='Java' driver='sqlite' threads='19' rss_size='237184' peek_rss_size='237184' user_time='18680' sys_time='11800'>
+<measures title='SQL Benchmark'>
+<time count='100000' time='201 us' total='20.179 s' title='CONNECT; SELECT 1; CLOSE' />
+<time count='1000' time='317 us' total='317.1 ms' title='DROP table; CREATE table' />
+<time count='10000' time='1 us' total='11.72 ms' title='INSERT INTO table' />
+<time count='100000' time='0 us' total='99.79 ms' title='SELECT * FROM table LIMIT 1' />
+<time count='100000' time='1 us' total='141.0 ms' title='SELECT * FROM table LIMIT 10' />
+<time count='100000' time='7 us' total='768.6 ms' title='SELECT * FROM table LIMIT 100' />
+<time count='100000' time='76 us' total='7.692 s' title='SELECT * FROM table LIMIT 1000' />
+<time count='100000' time='37 us' total='3.741 s' title='SELECT * FROM table LIMIT 500' />
+<time count='100000' time='1 us' total='154.6 ms' title='SELECT 1' />
+</measures>
+</benchmark
+
+
