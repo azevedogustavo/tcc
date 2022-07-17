@@ -1,0 +1,70 @@
+Docker container engine:
+
+Comando:
+    ./fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=randwrite --bs=32k --direct=0 --size=2048m --numjobs=1
+
+WRITE: bw=184MiB/s (193MB/s), 184MiB/s-184MiB/s (193MB/s-193MB/s), io=2048MiB (2147MB), run=11101-11101msec
+
+WRITE: bw=189MiB/s (198MB/s), 189MiB/s-189MiB/s (198MB/s-198MB/s), io=2048MiB (2147MB), run=10831-10831msec
+
+WRITE: bw=166MiB/s (174MB/s), 166MiB/s-166MiB/s (174MB/s-174MB/s), io=2048MiB (2147MB), run=12312-12312msec
+
+WRITE: bw=174MiB/s (182MB/s), 174MiB/s-174MiB/s (182MB/s-182MB/s), io=2048MiB (2147MB), run=11784-11784msec
+
+WRITE: bw=183MiB/s (192MB/s), 183MiB/s-183MiB/s (192MB/s-192MB/s), io=2048MiB (2147MB), run=11192-11192msec
+
+WRITE: bw=148MiB/s (156MB/s), 148MiB/s-148MiB/s (156MB/s-156MB/s), io=2048MiB (2147MB), run=13792-13792msec
+
+WRITE: bw=81.2MiB/s (85.2MB/s), 81.2MiB/s-81.2MiB/s (85.2MB/s-85.2MB/s), io=2048MiB (2147MB), run=25206-25206msec
+
+
+Comando:
+    /fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=randread --bs=32k --direct=0 --size=2048m --numjobs=1
+
+READ: bw=169MiB/s (177MB/s), 169MiB/s-169MiB/s (177MB/s-177MB/s), io=2048MiB (2147MB), run=12113-12113msec
+
+READ: bw=173MiB/s (181MB/s), 173MiB/s-173MiB/s (181MB/s-181MB/s), io=2048MiB (2147MB), run=11852-11852msec
+
+READ: bw=172MiB/s (180MB/s), 172MiB/s-172MiB/s (180MB/s-180MB/s), io=2048MiB (2147MB), run=11935-11935msec
+
+READ: bw=168MiB/s (176MB/s), 168MiB/s-168MiB/s (176MB/s-176MB/s), io=2048MiB (2147MB), run=12181-12181msec
+
+READ: bw=172MiB/s (180MB/s), 172MiB/s-172MiB/s (180MB/s-180MB/s), io=2048MiB (2147MB), run=11937-11937msec
+
+READ: bw=169MiB/s (177MB/s), 169MiB/s-169MiB/s (177MB/s-177MB/s), io=2048MiB (2147MB), run=12113-12113msec
+
+READ: bw=170MiB/s (179MB/s), 170MiB/s-170MiB/s (179MB/s-179MB/s), io=2048MiB (2147MB), run=12029-12029msec
+
+Comando:
+    /fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=read --bs=32k --direct=0 --size=2048m --numjobs=1
+
+READ: bw=733MiB/s (769MB/s), 733MiB/s-733MiB/s (769MB/s-769MB/s), io=2048MiB (2147MB), run=2794-2794msec
+
+READ: bw=726MiB/s (761MB/s), 726MiB/s-726MiB/s (761MB/s-761MB/s), io=2048MiB (2147MB), run=2822-2822msec
+
+READ: bw=720MiB/s (755MB/s), 720MiB/s-720MiB/s (755MB/s-755MB/s), io=2048MiB (2147MB), run=2844-2844msec
+
+READ: bw=726MiB/s (762MB/s), 726MiB/s-726MiB/s (762MB/s-762MB/s), io=2048MiB (2147MB), run=2820-2820msec
+
+READ: bw=725MiB/s (760MB/s), 725MiB/s-725MiB/s (760MB/s-760MB/s), io=2048MiB (2147MB), run=2825-2825msec
+
+READ: bw=736MiB/s (772MB/s), 736MiB/s-736MiB/s (772MB/s-772MB/s), io=2048MiB (2147MB), run=2783-2783msec
+
+
+Comando:
+    ./fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=write --bs=32k --direct=0 --size=2048m --numjobs=1
+
+WRITE: bw=152MiB/s (159MB/s), 152MiB/s-152MiB/s (159MB/s-159MB/s), io=2048MiB (2147MB), run=13513-13513msec
+
+WRITE: bw=167MiB/s (175MB/s), 167MiB/s-167MiB/s (175MB/s-175MB/s), io=2048MiB (2147MB), run=12255-12255msec
+
+WRITE: bw=190MiB/s (199MB/s), 190MiB/s-190MiB/s (199MB/s-199MB/s), io=2048MiB (2147MB), run=10779-10779msec
+
+WRITE: bw=177MiB/s (185MB/s), 177MiB/s-177MiB/s (185MB/s-185MB/s), io=2048MiB (2147MB), run=11580-11580msec
+
+WRITE: bw=177MiB/s (186MB/s), 177MiB/s-177MiB/s (186MB/s-186MB/s), io=2048MiB (2147MB), run=11551-11551msec
+
+WRITE: bw=169MiB/s (178MB/s), 169MiB/s-169MiB/s (178MB/s-178MB/s), io=2048MiB (2147MB), run=12094-12094msec
+    
+
+

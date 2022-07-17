@@ -1,0 +1,26 @@
+.. option:: readwrite=str, rw=str
+
+        Type of I/O pattern. Accepted values are:
+
+                **read**
+                                Sequential reads.
+                **write**
+                                Sequential writes.
+                **trim**
+                                Sequential trims (Linux block devices and SCSI
+                                character devices only).
+                **randread**
+                                Random reads.
+                **randwrite**
+                                Random writes.
+                **randtrim**
+                                Random trims (Linux block devices and SCSI
+                                character devices only).
+                **rw,readwrite**
+                                Sequential mixed reads and writes.
+                **randrw**
+                                Random mixed reads and writes.
+                **trimwrite**
+                                Sequential trim+write sequences. Blocks will be trimmed first,
+                                then the same blocks will be written to.
+

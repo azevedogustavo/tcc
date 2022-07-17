@@ -1,0 +1,79 @@
+Comando:
+    ./fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=randwrite --bs=32k --direct=0 --size=2048m --numjobs=1
+
+WRITE: bw=113MiB/s (119MB/s), 113MiB/s-113MiB/s (119MB/s-119MB/s), io=2048MiB (2147MB), run=18111-18111msec
+
+WRITE: bw=155MiB/s (163MB/s), 155MiB/s-155MiB/s (163MB/s-163MB/s), io=2048MiB (2147MB), run=13197-13197msec
+
+WRITE: bw=134MiB/s (140MB/s), 134MiB/s-134MiB/s (140MB/s-140MB/s), io=2048MiB (2147MB), run=15288-15288msec
+
+
+WRITE: bw=100MiB/s (105MB/s), 100MiB/s-100MiB/s (105MB/s-105MB/s), io=2048MiB (2147MB), run=20440-20440msec
+
+WRITE: bw=154MiB/s (161MB/s), 154MiB/s-154MiB/s (161MB/s-161MB/s), io=2048MiB (2147MB), run=13319-13319msec
+
+
+Comando:
+    ./fio --name=read --ioengine=libaio --iodepth=1 --rw=read --bs=32k --direct=0 --size=2048m --numjobs=1
+
+READ: bw=741MiB/s (777MB/s), 741MiB/s-741MiB/s (777MB/s-777MB/s), io=2048MiB (2147MB), run=2764-2764msec
+
+READ: bw=747MiB/s (783MB/s), 747MiB/s-747MiB/s (783MB/s-783MB/s), io=2048MiB (2147MB), run=2741-2741msec
+
+READ: bw=747MiB/s (783MB/s), 747MiB/s-747MiB/s (783MB/s-783MB/s), io=2048MiB (2147MB), run=2742-2742msec
+
+READ: bw=736MiB/s (772MB/s), 736MiB/s-736MiB/s (772MB/s-772MB/s), io=2048MiB (2147MB), run=2781-2781msec
+
+
+
+Comando:
+    fio --name=read --ioengine=libaio --iodepth=1 --rw=write --bs=32k --direct=0 --size=2048m --numjobs=1
+
+WRITE: bw=164MiB/s (172MB/s), 164MiB/s-164MiB/s (172MB/s-172MB/s), io=2048MiB (2147MB), run=12507-12507msec
+
+WRITE: bw=181MiB/s (190MB/s), 181MiB/s-181MiB/s (190MB/s-190MB/s), io=2048MiB (2147MB), run=11310-11310msec
+
+WRITE: bw=188MiB/s (197MB/s), 188MiB/s-188MiB/s (197MB/s-197MB/s), io=2048MiB (2147MB), run=10875-10875msec
+
+WRITE: bw=136MiB/s (143MB/s), 136MiB/s-136MiB/s (143MB/s-143MB/s), io=2048MiB (2147MB), run=15042-15042msec
+
+WRITE: bw=159MiB/s (167MB/s), 159MiB/s-159MiB/s (167MB/s-167MB/s), io=2048MiB (2147MB), run=12864-12864msec
+
+WRITE: bw=150MiB/s (157MB/s), 150MiB/s-150MiB/s (157MB/s-157MB/s), io=2048MiB (2147MB), run=13670-13670msec
+
+
+Comando:
+    ./fio --name=read --ioengine=libaio --iodepth=1 --rw=randread --bs=32k --direct=0 --size=2048m --numjobs=1
+
+READ: bw=186MiB/s (195MB/s), 186MiB/s-186MiB/s (195MB/s-195MB/s), io=2048MiB (2147MB), run=11024-11024msec
+
+READ: bw=184MiB/s (193MB/s), 184MiB/s-184MiB/s (193MB/s-193MB/s), io=2048MiB (2147MB), run=11143-11143msec
+
+READ: bw=185MiB/s (194MB/s), 185MiB/s-185MiB/s (194MB/s-194MB/s), io=2048MiB (2147MB), run=11043-11043msec
+
+READ: bw=184MiB/s (193MB/s), 184MiB/s-184MiB/s (193MB/s-193MB/s), io=2048MiB (2147MB), run=11148-11148msec
+
+
+
+                **read**
+                                Sequential reads.
+                **write**
+                                Sequential writes.
+                **trim**
+                                Sequential trims (Linux block devices and SCSI
+                                character devices only).
+                **randread**
+                                Random reads.
+                **randwrite**
+                                Random writes.
+                **randtrim**
+                                Random trims (Linux block devices and SCSI
+                                character devices only).
+                **rw,readwrite**
+                                Sequential mixed reads and writes.
+                **randrw**
+                                Random mixed reads and writes.
+                **trimwrite**
+                                Sequential trim+write sequences. Blocks will be trimmed first,
+                                then the same blocks will be written to.
+
