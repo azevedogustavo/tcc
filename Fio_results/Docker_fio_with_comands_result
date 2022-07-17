@@ -15,7 +15,6 @@ WRITE: bw=183MiB/s (192MB/s), 183MiB/s-183MiB/s (192MB/s-192MB/s), io=2048MiB (2
 
 WRITE: bw=148MiB/s (156MB/s), 148MiB/s-148MiB/s (156MB/s-156MB/s), io=2048MiB (2147MB), run=13792-13792msec
 
-WRITE: bw=81.2MiB/s (85.2MB/s), 81.2MiB/s-81.2MiB/s (85.2MB/s-85.2MB/s), io=2048MiB (2147MB), run=25206-25206msec
 
 
 Comando:
