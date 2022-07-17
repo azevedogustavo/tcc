@@ -12,6 +12,16 @@ WRITE: bw=100MiB/s (105MB/s), 100MiB/s-100MiB/s (105MB/s-105MB/s), io=2048MiB (2
 
 WRITE: bw=154MiB/s (161MB/s), 154MiB/s-154MiB/s (161MB/s-161MB/s), io=2048MiB (2147MB), run=13319-13319msec
 
+WRITE: bw=169MiB/s (177MB/s), 169MiB/s-169MiB/s (177MB/s-177MB/s), io=2048MiB (2147MB), run=12146-12146msec
+
+WRITE: bw=225MiB/s (236MB/s), 225MiB/s-225MiB/s (236MB/s-236MB/s), io=2048MiB (2147MB), run=9087-9087msec
+
+WRITE: bw=170MiB/s (178MB/s), 170MiB/s-170MiB/s (178MB/s-178MB/s), io=2048MiB (2147MB), run=12062-12062msec
+
+WRITE: bw=209MiB/s (219MB/s), 209MiB/s-209MiB/s (219MB/s-219MB/s), io=2048MiB (2147MB), run=9811-9811msec
+
+WRITE: bw=109MiB/s (114MB/s), 109MiB/s-109MiB/s (114MB/s-114MB/s), io=2048MiB (2147MB), run=18859-18859msec
+
 
 Comando:
     ./fio --name=read --ioengine=libaio --iodepth=1 --rw=read --bs=32k --direct=0 --size=2048m --numjobs=1
