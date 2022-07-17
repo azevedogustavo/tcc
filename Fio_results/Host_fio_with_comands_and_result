@@ -20,8 +20,6 @@ WRITE: bw=170MiB/s (178MB/s), 170MiB/s-170MiB/s (178MB/s-178MB/s), io=2048MiB (2
 
 WRITE: bw=209MiB/s (219MB/s), 209MiB/s-209MiB/s (219MB/s-219MB/s), io=2048MiB (2147MB), run=9811-9811msec
 
-WRITE: bw=109MiB/s (114MB/s), 109MiB/s-109MiB/s (114MB/s-114MB/s), io=2048MiB (2147MB), run=18859-18859msec
-
 
 Comando:
     ./fio --name=read --ioengine=libaio --iodepth=1 --rw=read --bs=32k --direct=0 --size=2048m --numjobs=1
