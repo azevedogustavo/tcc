@@ -1,7 +1,7 @@
 Docker container engine:
 
 Comando:
-    ./fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=randwrite --bs=32k --direct=0 --size=2048m --numjobs=1
+    ./fio --name=randwrite --ioengine=libaio --iodepth=4 --rw=randwrite --bs=32k --direct=0 --size=2048m --numjobs=1
 
 WRITE: bw=184MiB/s (193MB/s), 184MiB/s-184MiB/s (193MB/s-193MB/s), io=2048MiB (2147MB), run=11101-11101msec
 
@@ -18,7 +18,7 @@ WRITE: bw=148MiB/s (156MB/s), 148MiB/s-148MiB/s (156MB/s-156MB/s), io=2048MiB (2
 
 
 Comando:
-    /fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=randread --bs=32k --direct=0 --size=2048m --numjobs=1
+    /fio --name=randread --ioengine=libaio --iodepth=4 --rw=randread --bs=32k --direct=0 --size=2048m --numjobs=1
 
 READ: bw=169MiB/s (177MB/s), 169MiB/s-169MiB/s (177MB/s-177MB/s), io=2048MiB (2147MB), run=12113-12113msec
 
@@ -35,7 +35,7 @@ READ: bw=169MiB/s (177MB/s), 169MiB/s-169MiB/s (177MB/s-177MB/s), io=2048MiB (21
 READ: bw=170MiB/s (179MB/s), 170MiB/s-170MiB/s (179MB/s-179MB/s), io=2048MiB (2147MB), run=12029-12029msec
 
 Comando:
-    /fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=read --bs=32k --direct=0 --size=2048m --numjobs=1
+    /fio --name=read --ioengine=libaio --iodepth=4 --rw=read --bs=32k --direct=0 --size=2048m --numjobs=1
 
 READ: bw=733MiB/s (769MB/s), 733MiB/s-733MiB/s (769MB/s-769MB/s), io=2048MiB (2147MB), run=2794-2794msec
 
@@ -51,7 +51,7 @@ READ: bw=736MiB/s (772MB/s), 736MiB/s-736MiB/s (772MB/s-772MB/s), io=2048MiB (21
 
 
 Comando:
-    ./fio --name=random-writers --ioengine=libaio --iodepth=4 --rw=write --bs=32k --direct=0 --size=2048m --numjobs=1
+    ./fio --name=write --ioengine=libaio --iodepth=4 --rw=write --bs=32k --direct=0 --size=2048m --numjobs=1
 
 WRITE: bw=152MiB/s (159MB/s), 152MiB/s-152MiB/s (159MB/s-159MB/s), io=2048MiB (2147MB), run=13513-13513msec
 
