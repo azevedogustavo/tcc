@@ -53,27 +53,3 @@ READ: bw=185MiB/s (194MB/s), 185MiB/s-185MiB/s (194MB/s-194MB/s), io=2048MiB (21
 
 READ: bw=184MiB/s (193MB/s), 184MiB/s-184MiB/s (193MB/s-193MB/s), io=2048MiB (2147MB), run=11148-11148msec
 
-
-
-                **read**
-                                Sequential reads.
-                **write**
-                                Sequential writes.
-                **trim**
-                                Sequential trims (Linux block devices and SCSI
-                                character devices only).
-                **randread**
-                                Random reads.
-                **randwrite**
-                                Random writes.
-                **randtrim**
-                                Random trims (Linux block devices and SCSI
-                                character devices only).
-                **rw,readwrite**
-                                Sequential mixed reads and writes.
-                **randrw**
-                                Random mixed reads and writes.
-                **trimwrite**
-                                Sequential trim+write sequences. Blocks will be trimmed first,
-                                then the same blocks will be written to.
-
