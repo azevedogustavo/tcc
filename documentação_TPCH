@@ -1,0 +1,22 @@
+Link com o tutorial de como fazer:
+https://github.com/catarinaribeir0/queries-tpch-dbgen-mysql
+
+A geração das queries foram automáticas seguindo o passo a passo:
+
+Foi necessário a criação do usuário principal pra poder rodar as queries
+
+instalação do SQL-server e configuração de usuário:
+    https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt
+
+Comando para gerar os dados:
+    ./dbgen -s 0.4
+
+necessário:
+     SET GLOBAL local_infile=1;
+    
+Comando utilizado para a realização dos testes:
+    for i in 1 2 3 4 5 6; do mysql -u almeida -palmeida tpch < ./7.sql; done
+
+Profiling das queries:
+    set profiling=1;
+    SHOW PROFILES;
