@@ -1,0 +1,34 @@
+Entender o que é container engine (se é o sistema como um todo)
+Qual é a diferença entre RTK, CRI-O, Docker etc pra entender se eu consigo
+alterar o CRI(container runtime interface)
+
+CRI-O is not supported as a stand-alone container engine. You must use CRI-O as a container engine for a Kubernetes installation, such as OpenShift Container Platform. To run containers without Kubernetes or OpenShift Container Platform, use podman.
+
+O que é CRI: https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd
+
+O que é daemon e daemonless
+
+O que é o singularity?
+
+Existe como utilizar o podman ou docker com outra CRI?
+    Eu acho que o Podman pode sim, devido ao baixo acoplamento
+
+escrever sobre docker:
+
+
+Instalação do ContainerD: é feita pelo pacote padrão do repositório do ubuntu
+
+COMO RODAR IMAGEM DO CONTAINERD via CLI: https://iximiuz.com/en/posts/containerd-command-line-clients/
+
+comandos:
+    sudo  ctr image pull docker.io/library/ubuntu:latest
+    sudo ctr run --rm -t docker.io/library/ubuntu:latest cont1
+    Agora vc pode rodar os testes
+    
+
+Procurar um concorrente do docker Podman
+
+Doc do podman:
+    https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#repository
+
+https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction#registry_server
