@@ -1,7 +1,14 @@
 Paraddn
 
+Basicamente, você precisa instalar o python na versão necessária
+criar uma virtual env, habilitar instalação de pacote pip no venv
+dar upgrade no numpy
+
+
 https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/
 
 https://stackoverflow.com/questions/1534210/use-different-python-version-with-virtualenv
 
 https://stackoverflow.com/questions/64234182/error-when-creating-a-pipenv-virtual-environment-with-python-3-7
+
+https://stackoverflow.com/questions/54665842/when-importing-tensorflow-i-get-the-following-error-no-module-named-numpy-cor

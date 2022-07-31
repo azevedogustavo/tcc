@@ -1,0 +1,53 @@
+Comando para a geração de dados utilizados:
+./dbgen -s 0.4
+
+Comando utilizado nos testes:
+for i in 1 2 3 4 5 6; do mysql -u almeida -palmeida tpch < ./7.sql; done
+
+supp_nation	cust_nation	l_year	revenue
+INDIA	JAPAN	1995	19173312.7953
+INDIA	JAPAN	1996	20665488.4572
+JAPAN	INDIA	1995	19514252.5112
+JAPAN	INDIA	1996	19391261.3670
+Query_ID	Duration	Query
+1	197.03408725	select supp_nation, cust_nation, l_year, sum(volume) as revenue from ( select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from SUPPLIER, LINEITEM, ORDERS, CUSTOMER, NATION n1, NATION n2 where s_suppkey = l_
+mysql: [Warning] Using a password on the command line interface can be insecure.
+supp_nation	cust_nation	l_year	revenue
+INDIA	JAPAN	1995	19173312.7953
+INDIA	JAPAN	1996	20665488.4572
+JAPAN	INDIA	1995	19514252.5112
+JAPAN	INDIA	1996	19391261.3670
+Query_ID	Duration	Query
+1	199.60112725	select supp_nation, cust_nation, l_year, sum(volume) as revenue from ( select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from SUPPLIER, LINEITEM, ORDERS, CUSTOMER, NATION n1, NATION n2 where s_suppkey = l_
+mysql: [Warning] Using a password on the command line interface can be insecure.
+supp_nation	cust_nation	l_year	revenue
+INDIA	JAPAN	1995	19173312.7953
+INDIA	JAPAN	1996	20665488.4572
+JAPAN	INDIA	1995	19514252.5112
+JAPAN	INDIA	1996	19391261.3670
+Query_ID	Duration	Query
+1	206.13417125	select supp_nation, cust_nation, l_year, sum(volume) as revenue from ( select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from SUPPLIER, LINEITEM, ORDERS, CUSTOMER, NATION n1, NATION n2 where s_suppkey = l_
+mysql: [Warning] Using a password on the command line interface can be insecure.
+supp_nation	cust_nation	l_year	revenue
+INDIA	JAPAN	1995	19173312.7953
+INDIA	JAPAN	1996	20665488.4572
+JAPAN	INDIA	1995	19514252.5112
+JAPAN	INDIA	1996	19391261.3670
+Query_ID	Duration	Query
+1	206.57982100	select supp_nation, cust_nation, l_year, sum(volume) as revenue from ( select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from SUPPLIER, LINEITEM, ORDERS, CUSTOMER, NATION n1, NATION n2 where s_suppkey = l_
+mysql: [Warning] Using a password on the command line interface can be insecure.
+supp_nation	cust_nation	l_year	revenue
+INDIA	JAPAN	1995	19173312.7953
+INDIA	JAPAN	1996	20665488.4572
+JAPAN	INDIA	1995	19514252.5112
+JAPAN	INDIA	1996	19391261.3670
+Query_ID	Duration	Query
+1	207.05439300	select supp_nation, cust_nation, l_year, sum(volume) as revenue from ( select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from SUPPLIER, LINEITEM, ORDERS, CUSTOMER, NATION n1, NATION n2 where s_suppkey = l_
+mysql: [Warning] Using a password on the command line interface can be insecure.
+supp_nation	cust_nation	l_year	revenue
+INDIA	JAPAN	1995	19173312.7953
+INDIA	JAPAN	1996	20665488.4572
+JAPAN	INDIA	1995	19514252.5112
+JAPAN	INDIA	1996	19391261.3670
+Query_ID	Duration	Query
+1	210.98283400	select supp_nation, cust_nation, l_year, sum(volume) as revenue from ( select n1.n_name as supp_nation, n2.n_name as cust_nation, extract(year from l_shipdate) as l_year, l_extendedprice * (1 - l_discount) as volume from SUPPLIER, LINEITEM, ORDERS, CUSTOMER, NATION n1, NATION n2 where s_suppkey = l_

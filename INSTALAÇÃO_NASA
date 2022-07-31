@@ -1,0 +1,82 @@
+    1  ls
+    2  cd home/
+    3  ls
+    4  apt update; apt install wget vim xz-utils tar gcc make g++ -y
+    5  wget https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/openmpi/4.0.3-0ubuntu1/openmpi_4.0.3.orig.tar.xz
+    6  ls
+    7  tar -xf openmpi_4.0.3.orig.tar.xz 
+    8  ls
+   10  apt-get install libcr-dev
+
+       Para instalar o libcr-dev (
+wget -c http://archive.ubuntu.com/ubuntu/pool/universe/b/blcr/libcr0_0.8.5-2.3_amd64.deb
+wget -c http://archive.ubuntu.com/ubuntu/pool/universe/b/blcr/libcr-dev_0.8.5-2.3_amd64.deb
+
+sudo apt-get install ./libcr0_0.8.5-2.3_amd64.deb ./libcr-dev_0.8.5-2.3_amd64.deb)
+
+
+   11  ls
+   12  cd openmpi
+   13  ls
+   14  cd openmpi-4.0.3/
+   15  ls
+   16  ./configure
+   17  apt install openmpi-bin openmpi-dev openmpi-common openmpi-doc libopenmpi-dev
+   18  ls
+   19  make -j8
+   20  ./configure
+   21  ls
+   22  make -j8
+   23  apt install make -y
+   24  make -j8
+   25  make clean
+   26  ./configure
+   27  apt-get install gfortran
+   28  ./configure
+   29  make -j8
+   30  make install
+   31  cd ..
+   32  ls
+   33  wget https://www.nas.nasa.gov/assets/pdf/techreports/1994/rnr-94-007.pdf
+   34  ls
+   35  tar -xvf NPB3.4.2.tar.gz 
+   36  ls
+   37  cd NPB3.4.2
+   38  ls
+   39  cd NPB3.4-MPI/
+   40  ls
+   41  cd bin/
+   42  ls
+   43  cd ..
+   44  sl
+   45  ls
+   46  cd config/
+   47  ls
+   48  cp make.def.template make.def
+   49  vim make.def
+   50  cd ..
+   51  ls
+   52  make -j8
+   53  make bt CLASS=A
+   54  apt install locate; updatedb
+   55  locate libopen-pal.so.40
+   56  ldconfig
+   57  locate libopen-pal.so.40
+   58  echo $LDPATH
+   59  echo $LD_LIBRARY_PATH
+   60  export LD_LIBRARY_PATH=/usr/local/lib/
+   61  make bt CLASS=A
+   62  cd ..
+   63  ls
+   64  cd -
+   65  ls
+   66  cd bin/
+   67  ls
+   68  ./bt.A.x 
+   69  sudo apt install ssh
+   70  apt install ssh -y
+   71  apt install rsh
+   72  apt-get install rsh-server rsh-client -y
+   73  ls
+   74  ./bt.A.x 
+   75  history

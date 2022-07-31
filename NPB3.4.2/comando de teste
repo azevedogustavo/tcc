@@ -1,0 +1,1 @@
+for i in 1 2 3; do ./bin/bt.C.x; done; for i in 1 2 3;do ./bin/cg.B.x;done; for i in 1 2 3; do ./bin/ep.D.x; done; for i in 1 2 3; do ./bin/ft.C.x;done; for i in 1 2 3;do ./bin/lu.C.x;done; for i in 1 2 3;do ./bin/mg.D.x;done; for i in 1 2 3;do ./bin/sp.C.x;done
