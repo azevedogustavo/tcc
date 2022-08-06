@@ -1,5 +1,6 @@
 Link com o tutorial de como fazer:
 https://github.com/catarinaribeir0/queries-tpch-dbgen-mysql
+é necessário baixar aas queries do link
 
 A geração das queries foram automáticas seguindo o passo a passo:
 
@@ -11,6 +12,9 @@ instalação do SQL-server e configuração de usuário:
 Comando para gerar os dados:
     ./dbgen -s 0.4
 
+Como importar as tableas geradas?
+fazer o login --local_infile=1
+
 necessário:
      SET GLOBAL local_infile=1;
     
@@ -20,3 +24,6 @@ Comando utilizado para a realização dos testes:
 Profiling das queries:
     set profiling=1;
     SHOW PROFILES;
+
+
+SQLSERVER
