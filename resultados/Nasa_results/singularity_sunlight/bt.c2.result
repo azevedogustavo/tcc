@@ -1,0 +1,2077 @@
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.20
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20157.26
+ Mop/s/thread    =                  3359.54
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.11
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20169.83
+ Mop/s/thread    =                  3361.64
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.28
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20144.88
+ Mop/s/thread    =                  3357.48
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4809972931412E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.09
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20172.08
+ Mop/s/thread    =                  3362.01
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.47
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20260.49
+ Mop/s/thread    =                  3376.75
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   146.25
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19597.90
+ Mop/s/thread    =                  3266.32
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   145.93
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19641.97
+ Mop/s/thread    =                  3273.66
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   145.95
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19639.31
+ Mop/s/thread    =                  3273.22
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   146.55
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19558.81
+ Mop/s/thread    =                  3259.80
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   147.09
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19487.00
+ Mop/s/thread    =                  3247.83
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   143.21
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20014.00
+ Mop/s/thread    =                  3335.67
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.21
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20154.64
+ Mop/s/thread    =                  3359.11
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.47
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20260.90
+ Mop/s/thread    =                  3376.82
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.96
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20049.16
+ Mop/s/thread    =                  3341.53
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.55
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20106.55
+ Mop/s/thread    =                  3351.09
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.43
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20266.61
+ Mop/s/thread    =                  3377.77
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.19
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20300.56
+ Mop/s/thread    =                  3383.43
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   146.61
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19550.48
+ Mop/s/thread    =                  3258.41
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1567541967228E-15
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   146.09
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19620.29
+ Mop/s/thread    =                  3270.05
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   145.90
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19645.24
+ Mop/s/thread    =                  3274.21
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.42
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20267.77
+ Mop/s/thread    =                  3377.96
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   140.39
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20415.99
+ Mop/s/thread    =                  3402.66
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   143.21
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20014.89
+ Mop/s/thread    =                  3335.81
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.80
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20213.75
+ Mop/s/thread    =                  3368.96
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   146.60
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19552.28
+ Mop/s/thread    =                  3258.71
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5483657999714E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   141.86
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20204.51
+ Mop/s/thread    =                  3367.42
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.56
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20106.34
+ Mop/s/thread    =                  3351.06
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.7107214727039E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   143.98
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19906.98
+ Mop/s/thread    =                  3317.83
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.11
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20169.60
+ Mop/s/thread    =                  3361.60
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6035073279329E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   145.66
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 19677.63
+ Mop/s/thread    =                  3279.61
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     6
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.4664216175914E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.5595569387463E-14
+           3 0.1542353009301E+04 0.1542353009301E+04 0.4570019895726E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.8546348093735E-14
+           5 0.1160408742844E+05 0.1160408742844E+05 0.0000000000000E+00
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.3798306946818E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6952710059059E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.6207503944453E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7280219476673E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.8319838683812E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   142.66
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                 20092.30
+ Mop/s/thread    =                  3348.72
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.2
+ Compile date    =              31 Jul 2022
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+

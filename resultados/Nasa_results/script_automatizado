@@ -1,0 +1,40 @@
+/home/NPB3.4.2/NPB3.4-OMP/bin/run.sh
+
+
+#! /bin/bash
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/cg.C.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/cg.c.result
+done
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/bt.C.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/bt.c.result
+done
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/ft.C.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/ft.c.result
+done
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/lu.C.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/lu.c.result
+done
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/mg.D.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/mg.D.result
+done
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/sp.C.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/sp.c.result
+done
+
+for i in {1..31}
+do
+        /home/NPB3.4.2/NPB3.4-OMP/bin/ua.C.x >> /home/NPB3.4.2/NPB3.4-OMP/bin/ua.c.result
+done
+
