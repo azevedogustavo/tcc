@@ -10,12 +10,12 @@
 # No blank lines.
 # The following example builds sample sizes of all benchmarks.
 ft      C
-mg      D
+mg      C
 sp      C
 lu      C
 bt      C
 is      A
 ep      D
 cg      C
-ua      B
+ua      C
 
