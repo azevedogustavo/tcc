@@ -1,0 +1,205 @@
+%----------------------------------------------------------------------------------
+% Exemplo do uso da classe tcc.cls. Veja o arquivo .cls
+% para mais detalhes e instruções.
+%----------------------------------------------------------------------------------
+\chapter{\label{chap:chap3}Virtualização baseada em contêiner}
+
+%\section{}
+
+A grande diferença entre contêiner e virtualização de máquinas, é que ao contrário da virtualização, que precisa criar drivers para a utilização do mesmo hardware, a virtualização baseada em contêiner torna o gerenciamento de virtualização mais ágeis e leves rodando sobre o mesmo host e utilizando os mesmos drivers do host.
+Para que este tipo de virtualização funcione, o kernel linux sofreu diversas contribuições adicionando componentes que possibilitasse de fato uma virtualização de contêiner, como  Control groups, namespace, network namespace, PID namespace, sistema de arquivo dedicado a contêineres etc.
+Estas contribuições alcançaram o isolamento \begin{comment}de caminhos \end{comment} para acessar diferentes recursos criando um limite lógico dentro do mesmo sistema operacional. Como exemplo, obter um sistema de arquivos raiz separado, um arquivo separado de árvore de processos, um subsistema de rede separado e assim por diante, sem a necessidade de um hipervisor ou camadas de virtualização, tornando-os mais ágeis para o gerenciamento e mais baratos na sua execução.
+
+De forma simplória, a virtualização de contêiner é a execução de um processo pelo kernel linux de forma isolada do namespace padrão que o sistema operacional executa. Esse isolamento permite uma solução extensa de problemas na área de desenvolvimento, como teste de softwares loclamente e gerenciamento de sistemas em produção sem grandes requisições de hardware. O contêiner, por isso, pode ser considerado uma máquina a parte rodando no seu hospedeiro cumprindo os três princípios básicos de virtualização (Popek and Goldberg, 1973) 
+
+
+
+\section{Namespaces} 
+
+Um namespace é um isolamento lógico dentro do kernel do Linux. Um namespace controla a visibilidade dentro do kernel linux. Todos os controles são definidos a nível de processo. Isso significa que um namespace controla quais recursos dentro do kernel um processo pode ver. Pense no kernel Linux como um guarda protegendo recursos como memória do SO, instruções privilegiadas de CPU, discos, e outros recursos que somente o kernel deve poder acessar. Aplicações rodando no espaço de usuário só devem acessar esses recursos por meio de uma “armadilha”, nesse caso o kernel assume o controle e executa essas instruções em nome da aplicação do espaço de usuário. Como exemplo, uma aplicação que deseja acessar um arquivo em um disco terá que delegar esta chamada ao kernel por meio de uma chamada de sistema, que é intercepta internamente pelo kernel, e então executa essa solicitação em nome da aplicação.
+
+
+Como pode haver muitas aplicações de espaço de usuário sendo executadas em paralelo em um único kernel Linux, é necessário uma maneira de fornecer isolamento entre essas aplicações baseados no espaço do usuário. Por isolamento, queremos dizer que deve haver um tipo de ambiente controlado para aplicação individual, de modo que certos recursos sejam confinados a esse ambinete. Como exemplo, um isolamento de um sistema de arquivos, o que significaria que dentro desse ambiente poderíamos ter nossa própria visão dos arquivos. Dessa forma, vários desses contêineres podem ser executados no mesmo kernel do Linux sem interferir um no outro.
+
+\section{Tipos de namespace}
+
+\subsubsection{UTS} 
+Esse namespace permite que um processo veja um nome de host separado diferente do namespace real global .
+
+\subsubsection{PID}
+Os processos dentro do namespace indentificador de processo(PID) possuem uma árvore de processos diferente. Eles têm um processo de inicialização com PID 1. No entanto, no nível da estrutura de dados, os processos pertencem a uma árvore de processos global, que é visível apenas no nível do host. Ferramentas como ps ou uso direto do sistema de arquivos /proc de dentro do namespace listam os processos e seus recursos relacionados para a árvore de processos dentro do namespace.
+
+\subsubsection{Mount}
+Ele controla quais pontos de montagem que um processo deve ver. Se um processo estiver dentro de um namespace, ele só verá as montagens dentro desse namespace.
+Uma montagem no kernel é representada por uma estrutura de dados chamada vfsmount. Todas as montagens formam uma estrutura em forma de árvore, com uma estrutura de montagem filho que contém uma referência à estrutura de montagem pai.
+
+[EXPLICAR MELHOR ESSA PARTE DO DENTRY E DO VSMOUNT DO PONTO DE MONTAGEM]
+Sempre que uma operação de montagem é invocada, uma estrutura vfsmount é criada e o dentry do ponto de montagem bem como o dentry da árvore montada é populada. Um dentry é uma estrutura de dados que mapeia o inode para o nome do arquivo.
+Além da montagem, existe uma montagem de ligação, que permite um diretório (em vez de um dispositivo) para ser montado em um ponto de montagem. O processo de ligação de montagem resulta na criação de uma estrutura vfsmount que aponta para o dentry do diretório.
+Os contêineres funcionam no conceito de montagens de ligação. Assim, quando um volume é criado para um contêiner, na verdade é uma montagem de ligação de um diretório dentro do host para um ponto de montagem no sistema de arquivos do contêiner. Desde que a montagem acontece dentro do namespace mount, as estruturas vfsmount têm o escopo definido para o espaço de nomes de montagem. Isso significa que, ao criar uma montagem de ligação de um diretório, podemos expor um volume dentro do namespace que contém o contêiner.
+
+\subsubsection{Network}
+Um namespace de rede fornece a um contêiner um conjunto separado de subsistemas. Isso significa que o processo dentro do namespace de rede verá diferentes interfaces de rede, rotas e iptables, separando a rede do contêiner da rede do host.
+
+\subsubsection{IPC}
+[explicar melhor o que seriam mensagens POSIX]
+Esse namespace abrange construções IPC, como filas de mensagens POSIX.
+Entre dois processos dentro do mesmo namespace, o IPC é habilitado, mas
+será restrito se dois processos em dois namespaces diferentes tentarem
+comunicar através do IPC.
+
+\subsubsection{Cgroup}
+Um cgroup é uma coleção de processos que estão ligados a um conjunto de limites ou parâmetros definidos através do sistema de arquivos cgroup.
+O subsistema é um componente do kernel que modifica o comportamento dos processos em um cgroup, tornando possível limitar a quantidade de tempo de CPU e memória disponível para um cgroup, contabilizando para o tempo de CPU usado retirando e recolocando o contexto de um processo ou namespace
+
+
+\subsubsection{Time}
+O namespace time tem dois casos de uso principais, altera a data e hora dentro de um contêiner e ajusta os relógios para um contêiner restaurado de um posto de controle. 
+O kernel fornece acesso a vários relógios: tempo de relógio da máquina, tempo de relógio monotônico e tempo de relógio de boot. Os dois últimos relógios são monótonos, mas os pontos de partida para eles não estão bem definidos (atualmente é o arranque do sistema tempo, mas o POSIX diz “desde um ponto não especificado no passado”) e são diferentes para cada sistema. Quando um contêiner migra de um nó para outro, todos os relógios são restaurados para seus estados consistentes. Em outras palavras, eles têm que continuar correndo do mesmo ponto em que foram interrompidos.
+
+
+
+
+
+
+% lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy eirmod tempor invidunt~\cite{PLASSPAG81} ut labore et
+% dolore magna aliquyam erat sed diam voluptua at vero eos et
+% accusam et justo duo dolores et ea rebum stet clita kasd gubergren
+% no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum
+% dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod
+% tempor invidunt ut labore et dolore magna aliquyam erat sed diam
+% voluptua at vero eos et accusam et justo duo dolores et ea rebum
+% stet clita kasd gubergren no sea takimata sanctus est lorem ipsum
+% dolor sit amet lorem ipsum. A Tabela~\ref{tab:tab1} mostra o
+% cronograma.~\cite{WIKIPIC09}
+
+% Um exemplo relativamente complicado de tabela.
+% \begin{table}[htb]
+% \begin{center}
+% \caption{\label{tab:tab1}This is a table}%
+% %\rowcolors{4}{black!10}{black!15}
+% \setlength{\tabcolsep}{.5cm}%
+% \resizebox{.7\linewidth}{!}{%
+% \begin{tabular}{r*{2}{>{\columncolor[gray]{0.95}}c>{\columncolor[gray]{1.0}}c}}%
+% \noalign{\smallskip}
+% %\hline
+% \multirow{2}{*}{\textbf{Atividade}} & \multicolumn{4}{c}{\textbf{Ano/Semestre}}\tabularnewline
+% \cline{2-5}
+%   & \textbf{2011/II} & \textbf{2012/I} & \textbf{2012/II} & \textbf{2013/I}\tabularnewline
+% 1  &            &            &            &          \tabularnewline
+% 2  & \checkmark & \checkmark & \checkmark &          \tabularnewline
+% 3  & \checkmark & \checkmark & \checkmark &          \tabularnewline
+% 4  & \checkmark & \checkmark & \checkmark & $\times$ \tabularnewline
+% 5  &            &            &            &          \tabularnewline
+% 6  &            &            &            &          \tabularnewline
+% 7  & $\times$   &            &            &          \tabularnewline
+% 8  &            & $\times$   &            &          \tabularnewline
+% 9  &            & $\times$   & $\times$   &          \tabularnewline
+% 10 & $\times$   & $\times$   & $\times$   &          \tabularnewline
+% 11 & $\times$   & $\times$   & $\times$   & $\times$ \tabularnewline
+% \end{tabular}}
+% \end{center}
+% \end{table}
+
+% \section{Another section}
+
+% Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+% erat sed diam voluptua at vero eos et accusam et justo duo dolores
+% et ea rebum stet clita kasd gubergren no sea takimata sanctus est
+% lorem ipsum dolor sit amet lorem.~\cite{XIAOAPL05}
+
+% Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+% erat sed diam voluptua at vero eos et accusam et justo duo dolores
+% et ea rebum stet clita kasd gubergren no sea takimata sanctus est
+% lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur
+% sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore
+% et dolore magna aliquyam erat sed diam voluptua at vero eos et
+% accusam et justo duo dolores et ea rebum stet clita kasd gubergren
+% no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum
+% dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod
+% tempor invidunt ut labore et dolore magna aliquyam erat sed diam
+% voluptua at vero eos et accusam et justo duo dolores et ea rebum
+% stet clita kasd gubergren no sea takimata sanctus est lorem ipsum
+% dolor sit amet. Figura~\ref{fig:fig2}.
+
+% % Mais uma figura
+% \begin{figure}[htb]
+% \centering\includegraphics[width=.75\textwidth]{fig/exemplo1.eps}
+% \caption{\label{fig:fig2}This is another figure}
+% \end{figure}
+
+% Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+% esse molestie consequat vel illum dolore eu feugiat nulla
+% facilisis at vero eros et accumsan et iusto odio dignissim qui
+% blandit praesent luptatum zzril delenit augue duis dolore te
+% feugait nulla facilisi lorem ipsum dolor sit amet consectetuer
+% adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet
+% dolore magna aliquam erat volutpat.
+
+% Ut wisi enim ad minim veniam quis nostrud exerci tation
+% ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+% consequat duis autem vel eum iriure dolor in hendrerit in
+% vulputate velit esse molestie consequat vel illum dolore eu
+% feugiat nulla facilisis at vero eros et accumsan et iusto odio
+% dignissim qui blandit praesent luptatum zzril delenit augue duis
+% dolore te feugait nulla facilisi.
+
+% Nam liber tempor cum soluta nobis eleifend option congue nihil
+% imperdiet doming id quod mazim placerat facer possim assum lorem
+% ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy
+% nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+% volutpat ut wisi enim ad minim veniam quis nostrud exerci tation
+% ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+% consequat.
+
+% \subsection{Another subsection}
+
+% lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+% erat sed diam.~\cite{COFFMANPACKING98}
+
+% \subsubsection{Another subsubsection}
+
+% lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy. A seguir, a Tabela~\ref{tab:tab2} mostra algo mais
+% simples.
+
+% % Um exemplo de tabela mais simples.
+% \begin{table}
+% \begin{center}%
+% \caption{\label{tab:tab2}Note que a legenda da tabela fica na parte de cima}%
+% %\setlength{\tabcolsep}{1cm}%
+% \begin{tabular*}{.7\linewidth}{@{\extracolsep{\fill}}lll}%
+% \noalign{\smallskip}
+% \hline
+% lorem & ipsum & dolor \tabularnewline
+% sit & amet & consetetur \tabularnewline
+% sadipscing & elitr & sed \tabularnewline
+% diam & nonumy & eirmod \tabularnewline
+% tempor & invidunt & ut \tabularnewline
+% labore & et & dolore \tabularnewline
+% magna & aliquyam & erat \tabularnewline
+% sed & diam & voluptua \tabularnewline
+% at & vero & eos \tabularnewline
+% \end{tabular*}
+% \end{center}
+% \end{table}
+
+% Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+% erat sed diam voluptua at vero eos et accusam et justo duo dolores
+% et ea rebum stet clita kasd gubergren no sea takimata sanctus est
+% lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur
+% sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore
+% et dolore magna aliquyam erat sed diam voluptua at.
+
+% Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam
+% nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+% erat sed diam voluptua at vero eos et accusam et justo duo dolores
+% et ea rebum stet clita kasd gubergren no sea takimata sanctus est
+% lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetetur
+% sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore
+% et dolore magna aliquyam erat sed diam voluptua at.
